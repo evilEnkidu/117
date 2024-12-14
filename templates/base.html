@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      {% load static %}
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{% block title  %} {% endblock title %}</title>
+      <link rel="stylesheet" href="{% static 'css/contact.css'%}">
+      <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+      <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+      <link rel="stylesheet" href="{% static 'css/about.css' %}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
+</head>
+<body>
+      <nav class="navbar">
+            <div class="navbar-container">
+                  <a href="#" class="logo">@0X686Reyes</a>
+                  <ul class="nav-links">
+                        <li><a href="{% url 'about_url'%}">Home</a></li>
+                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                        <li><a href="#about">Experience</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                  </ul>
+                  <button class="menu-toggle">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                  </button>
+            </div>
+      </nav>
+      {% block content %}
+
+      
+      {% endblock content %}
+
+      <footer class="footer">
+            <div class="footer-container">
+                <a href="#" class="footer-logo">Emiliano Magana Reyes</a>
+                
+                <ul class="social-links">
+                    <li><a href="#" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://x.com/0x686REYES" target="_blank">X</a></li>
+                    <li><a href="https://github.com/conn3ct3d" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/dreyesprivblend/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                © 2024 0x686DEV. All Rights Reversed.
+            </div>
+        </footer>
+      <script src="{% static 'scripts/navbar.js' %}"></script>
+</body>
+</html>

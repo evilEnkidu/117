@@ -1,0 +1,118 @@
+.contact-section{
+      flex: 1 0 auto;
+}
+/* Contact Page Styling */
+.contact-section {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .contact-section h1 {
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  
+  .contact-section h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  
+  #emailForm {
+      width: 100%;
+  }
+  
+  #emailForm p {
+      margin-bottom: 15px;
+  }
+  
+  #emailForm label {
+      display: block;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 0.8rem;
+  }
+  
+  #emailForm input, 
+  #emailForm textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-weight: 300;
+      font-size: 0.9rem;
+      transition: border-color 0.3s ease;
+  }
+  
+  #emailForm input:focus, 
+  #emailForm textarea:focus {
+      outline: none;
+      border-color: #000;
+  }
+  
+  #emailForm button {
+      width: 100%;
+      padding: 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+  
+  #emailForm button:hover {
+      background-color: #333;
+  }
+  
+  #emailForm button:active {
+      opacity: 0.8;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+      .contact-section {
+          padding: 20px 15px;
+      }
+  
+      .contact-section h1 {
+          font-size: 1.5rem;
+      }
+  
+      .contact-section h2 {
+          font-size: 0.9rem;
+      }
+  }
+  
+  /* Error Handling */
+  #emailForm .errorlist {
+      color: #dc3545;
+      font-size: 0.8rem;
+      margin-top: 5px;
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  #emailForm .errorlist li {
+      margin-bottom: 5px;
+  }
