@@ -5,6 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>{% block title  %} {% endblock title %}</title>
+      <link rel="stylesheet" href="{% static 'css/experience.css'%}">
       <link rel="stylesheet" href="{% static 'css/contact.css'%}">
       <link rel="stylesheet" href="{% static 'css/projects.css' %}">
       <link rel="stylesheet" href="{% static 'css/styles.css' %}">
@@ -21,7 +22,7 @@
                   <ul class="nav-links">
                         <li><a href="{% url 'about_url'%}">Home</a></li>
                         <li><a href="{% url 'projects' %}">Projects</a></li>
-                        <li><a href="#about">Experience</a></li>
+                        <li><a href="{% url 'experience' %}">Experience</a></li>
                         <li><a href="{% url 'contact' %}">Contact</a></li>
                   </ul>
                   <button class="menu-toggle">

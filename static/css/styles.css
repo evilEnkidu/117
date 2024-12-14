@@ -1,4 +1,4 @@
-        
+        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -16,14 +16,14 @@
         }
 
         .site-content{
-            padding-top: 80px; 
+            padding-top: 80px; /* Adjust this value to match the height of your navbar */
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #fff; 
-            color: #333; 
+            background-color: #fff; /* Optional: set a clean background */
+            color: #333; /* Optional: set a default text color */
             flex: 1 0 auto;
         }
-        
+        /* Navbar Styling */
         .navbar {
             position: fixed;
             top: 0;
@@ -98,7 +98,7 @@
             transition: 0.4s;
         }
 
-        
+        /* Responsive Styles */
         @media screen and (max-width: 768px) {
             .nav-links {
                 position: fixed;
@@ -137,7 +137,7 @@
             }
         }
 
-        
+        /* Footer Styling - Can be added to existing CSS */
         .footer {
             flex-shrink: 0;
             background-color: rgba(255, 255, 255, 0.95);
@@ -198,7 +198,7 @@
             margin-top: 20px;
         }
 
-        
+        /* Responsive Footer */
         @media screen and (max-width: 768px) {
             .footer-container {
                 flex-direction: column;

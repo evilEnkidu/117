@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Project
+from .models import Project, Experience
 
 # Create your views here.
 def projects(request):
@@ -7,3 +7,8 @@ def projects(request):
       return render(request, 'content/projects.html', {
             'projects':projects
       })
+
+def experience(request):
+      #get info from Admin panel
+      experiences = Experience.objects.all()
+      return render(request, 'content/experience.html', {"experiences":experiences})
